@@ -3,12 +3,15 @@
     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a class="nav-link px-2 link-secondary" routerLink="/">Accueil</a></li>
-      <li><a class="nav-link px-2 link-dark" data-bs-toggle="offcanvas" data-bs-target="#demo" routerLink="/profile" *ngIf="isSignedIn">Mon profil</a></li>
+      <li><a class="nav-link px-2 link-dark" data-bs-toggle="offcanvas" data-bs-target="#demo" routerLink="/profile"
+          *ngIf="isSignedIn">Mon profil</a></li>
     </ul>
 
-    <li class="nav-link px-2 link-dark" *ngIf="isSignedIn">Bonjour, <strong class="text-info"> {{ userN }}</strong> vous êtes bien connecté</li>
+    <li class="nav-link px-2 link-dark" *ngIf="isSignedIn">Bonjour, <strong class="text-info"> {{ userN }}</strong> vous
+      êtes bien connecté</li>
     <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-outline-info me-2" *ngIf="!isSignedIn" routerLink="/register">S'enregistrer</button>
+      <button type="button" class="btn btn-outline-info me-2" *ngIf="!isSignedIn"
+        routerLink="/register">S'enregistrer</button>
       <button type="button" class="btn sbtn-primary" *ngIf="!isSignedIn" routerLink="/login">Connexion</button>
       <button type="button" class="btn btn-secondary" (click)="signOut()" *ngIf="isSignedIn">Déconnexion</button>
     </div>

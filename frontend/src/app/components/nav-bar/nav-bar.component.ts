@@ -13,7 +13,6 @@ export class NavBarComponent implements OnInit {
   isSignedIn!: boolean;
   userN: string | null = localStorage.getItem('userN');
 
-
   constructor(
     private auth: AuthStateService,
     private router: Router,

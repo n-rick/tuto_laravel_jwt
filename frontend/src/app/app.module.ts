@@ -10,6 +10,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { AuthInterceptor } from './interceptor/auth.interceptor';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    FontAwesomeModule,
   ],
   providers: [
     {
