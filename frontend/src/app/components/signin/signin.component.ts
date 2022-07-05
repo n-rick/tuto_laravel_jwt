@@ -47,8 +47,8 @@ export class SigninComponent implements OnInit {
   }
 
   responseHandler(data: any) {
-    // console.log(data);
     this.token.handleData(data.access_token);
+    localStorage.setItem('userN', data.user.name);
   }
 
 }

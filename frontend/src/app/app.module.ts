@@ -9,13 +9,15 @@ import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { AuthInterceptor } from './interceptor/auth.interceptor';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
     SignupComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

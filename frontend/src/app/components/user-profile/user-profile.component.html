@@ -1,11 +1,22 @@
 <div class="container">
   <div class="card inner-main">
     <div class="card-header">
-      Profile Utilisateur
+      Profil Utilisateur
     </div>
     <div class="card-body">
       <p class="card-text">Nom: <strong>{{UserProfile?.name}}</strong></p>
       <p class="card-text">Email: <strong>{{UserProfile?.email}}</strong></p>
     </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-end" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title text-info">Profil de {{ UserProfile?.name }}</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p class="card-text">Nom: <strong>{{UserProfile?.name}}</strong></p>
+    <p class="card-text">Email: <strong>{{UserProfile?.email}}</strong></p>
+    <button class="btn btn-secondary" type="button" role="clos">Modifier</button>
   </div>
 </div>
