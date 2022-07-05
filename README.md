@@ -1,3 +1,3 @@
 # tuto_laravel_jwt
 
-Test de laravel et Angular pour login et inscription
+Test de Laravel (back-end) et Angular(front-end) pour login et inscription
